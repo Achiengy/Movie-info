@@ -17,6 +17,8 @@ html{
     margin: auto;
 }
 
+
+/* Navbar */
 .navbar {
     position: fixed;
     width: 100%;
@@ -45,9 +47,28 @@ html{
 
 .navbar .menu li a {
     display: block;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70px;
     transition: color 0.3s ease;
 }
+
+/* Home */
+.home {
+    display: flex;
+    background: black;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+}
+
+
+
