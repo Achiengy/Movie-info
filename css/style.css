@@ -673,12 +673,12 @@ footer span a:hover{
 
 @media(max-width: 495px){
     .search {
-        height: 160vh;
+        height: 180vh;
     }
 
     .search .result-container .result-grid {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .search .search-container  .search-element .form-control {
@@ -694,5 +694,30 @@ footer span a:hover{
         flex-direction: column;
     }
 }
+
+@media(max-width: 350px){
+    .search {
+        height: 180vh;
+    }
+
+    .search .result-container .result-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search .search-container  .search-element .form-control {
+        width: 250px;
+    }
+
+    .contact {
+        height: 120vh;
+    }
+
+    .contact .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 
