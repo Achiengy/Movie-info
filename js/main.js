@@ -37,13 +37,15 @@ $(document).ready(function(){
 
 
 //   SEARCH CONTAINER
+//OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=ec8eb29a
+
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
 
 // load movies from API
 async function loadMovies(searchTerm){
-    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
+    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=ec8eb29a`;
     const res = await fetch(`${URL}`);
     const data = await res.json();
     
@@ -64,7 +66,7 @@ function displayMovieList(movies){
     searchList.innerHTML = "";
     for(let idx = 0; idx < movies.length; idx++){
         let movieListItem = document.createElement('div');
-        movieListItem.dataset.id = movies[idx].imdbID; 
+        movieListItem.dataset.id = movies[idx].imdbID; // 
         movieListItem.classList.add('search-list-item');
         if(movies[idx].Poster != "N/A")
             moviePoster = movies[idx].Poster;
@@ -91,12 +93,14 @@ function loadMovieDetails(){
         movie.addEventListener('click', async () => {
             searchList.classList.add('hide-search-list');
             movieSearchBox.value = "";
-            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
+            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=ec8eb29a`);
             const movieDetails = await result.json();
             displayMovieDetails(movieDetails);
         });
     });
 }
+
+
 
 function displayMovieDetails(details){
     resultGrid.innerHTML = `
@@ -117,3 +121,20 @@ function displayMovieDetails(details){
     `;
 }
 
+
+window.addEventListener('click', (event) => {
+    if(event.target.className != "form-control"){
+        searchList.classList.add('hide-search-list');
+    }
+});
+
+
+// FORM VALIDATION-CONTACT 
+$("form").on("submit", function (e) {
+    e.preventDefault();
+    var username = $("#username").val();
+    alert(
+      "Hello" + " " + username + ",\nThanks for the feedback. " 
+    );
+    document.querySelector("form").reset();
+  });
