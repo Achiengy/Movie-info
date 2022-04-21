@@ -7,7 +7,12 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");
         }
         
-    
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
     });
   
     // slide-up script
@@ -28,3 +33,19 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
   });
+
+
+
+//   SEARCH CONTAINER
+const movieSearchBox = document.getElementById('movie-search-box');
+const searchList = document.getElementById('search-list');
+const resultGrid = document.getElementById('result-grid');
+
+// load movies from API
+async function loadMovies(searchTerm){
+    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
+    const res = await fetch(`${URL}`);
+    const data = await res.json();
+    
+    if(data.Response == "True") displayMovieList(data.Search);
+}
