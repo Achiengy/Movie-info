@@ -255,6 +255,19 @@ section .title::after{
     width: 750px;
 }
 
+/* THUMBNAIL */
+.search-list::-webkit-scrollbar{
+    width: 8px;
+}
+.search-list::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.search-list::-webkit-scrollbar-thumb{
+    background-color: teal;
+    outline: none;
+    border-radius: 10px;
+}
 
 
 
@@ -266,7 +279,8 @@ section .title::after{
 
 
 
-/* RESPONSIVE MEDIA QUERY */
+
+/* RESPONSIVE MEDIA QUERY-HOME PAGE*/
 
 @media (max-width: 991px) {
     .max-width{
