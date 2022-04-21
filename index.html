@@ -17,7 +17,7 @@
         <div class="max-width">
             <div class="logo"><a href="#">Movie-info.</a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#home" class="menu-btn" id="link">Home</a></li>
                 <li><a href="#search" class="menu-btn">Search</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
@@ -63,13 +63,13 @@
                 </div>
                 <div class="column right">
                     <div class="text">Send Feedback</div>
-                    <form action="#">
+                    <form id="form" onSubmit="return formValidation();">
                             <div class="field name">
-                                <input type="text" placeholder="Username" required>
+                                <input type="text" placeholder="Username" id='username' required>
                             </div>
                        
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                                <textarea cols="30" rows="10" placeholder="Message.." id='feedback' required></textarea>
                             </div>
                             <div class="button-area">
                                 <button type="submit">Submit</button>

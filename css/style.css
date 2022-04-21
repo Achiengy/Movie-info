@@ -92,6 +92,7 @@ section .title::after{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    background: #888;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -124,8 +125,15 @@ section .title::after{
     color: white;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 90px;
     transition: color 0.3s ease;
+}
+
+.navbar .menu  #link {
+  
+  border-bottom:5px solid teal; 
+  
+  
 }
 
 .menu-btn{
@@ -467,16 +475,6 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
