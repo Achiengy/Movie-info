@@ -198,4 +198,21 @@ section .title::after{
 }
 
 
+/* SEARCH SECTION STYLING */
+.search {
+    height: 100vh;
+    background: #111;
+}
 
+.search .title {
+    color: white;
+}
+
+.search .title::before{
+    background: teal;
+}
+.search .title::after{
+    color: teal;
+    background: #111;
+    content: "movie info";
+}
