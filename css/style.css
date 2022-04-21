@@ -130,10 +130,7 @@ section .title::after{
 }
 
 .navbar .menu  #link {
-  
   border-bottom:5px solid teal; 
-  
-  
 }
 
 .menu-btn{
@@ -621,4 +618,81 @@ footer span a:hover{
         margin-left: 0;
     }
 }
+
+/* MEDIA RESPONSIVENESS CONTACT SECTION */
+@media(max-width: 1186px){
+    .search .movie-poster img{
+        height: 300px;
+      }
+}
+@media(max-width: 803px){
+    .contact .contact-content .left img {
+        height: 300px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    .contact .contact-content .right {
+        margin-right: 50px;
+    }
+
+    .search {
+        height: 160vh;
+    }
+
+    .search .search-container  .search-element .form-control {
+        width: 400px;
+    }
+
+    .search .movie-poster img{
+      height: 300px;
+    }
+
+    .search .movie-info{
+        padding-top: 1rem;
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media(max-width: 620px){
+   .search {
+       height: 120vh;
+   }
+
+   .search .search-container .movie-info {
+    width: 250px;
+   
+    margin-right: 30px;
+   }
+
+   .search .result-container .result-grid {
+       display: flex;
+       flex-direction: row;
+   }
+}
+
+@media(max-width: 495px){
+    .search {
+        height: 160vh;
+    }
+
+    .search .result-container .result-grid {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .search .search-container  .search-element .form-control {
+        width: 250px;
+    }
+
+    .contact {
+        height: 120vh;
+    }
+
+    .contact .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
