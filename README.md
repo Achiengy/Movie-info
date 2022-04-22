@@ -6,7 +6,8 @@
 ## Table of Content
 
 + [Description](#description)
-+ [Installation Requirement](#Installation)
++ [Installation](#Installation)
++ [Requirement](#Requirement)
 + [Technology Used](#technology-used)
 + [Reference](#reference)
 + [Licence](#licence)
@@ -15,8 +16,11 @@
 ## Description
 <p>This is a website that allows users obtain movie information such as content and images.</p>
 
+### Installation 
+git clone https://github.com/Achiengy/Movie-info.git
 
-### Installation Requirement
+
+### Requirement
 
 * Either a computer,phone,tablet or an Ipad
 
@@ -28,7 +32,9 @@
 
 * CSS - which was used to style the pages 
 
-*JavaScript-develop interactive web applications
+* JavaScript-develop interactive web applications
+
+
 
 ## Reference
 * <a href='https://developer.mozilla.org/en-US/'>MDN Docs</a>
@@ -63,6 +69,6 @@ SOFTWARE.
 
 ## Authors Info
 
-LinkedIn Profile - [Hope Pete]()
+LinkedIn Profile - [Hope Pete](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3B04GDdBTyQ4GEV6yKxfysNA%3D%3D)
 
 [Go Back to the top](#Movie-info)
