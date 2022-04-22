@@ -33,6 +33,7 @@ git clone https://github.com/Achiengy/Movie-info.git
 * CSS - which was used to style the pages 
 
 * JavaScript-develop interactive web applications
+* API Link-https://www.omdbapi.com/
 
 
 
